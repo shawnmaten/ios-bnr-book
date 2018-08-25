@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="WorldTrotter/Base.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="Hybrid">
+        <source>Hybrid</source>
+        <target>混合动力</target>
+        <note>Hybrid map view</note>
+      </trans-unit>
+      <trans-unit id="Satellite">
+        <source>Satellite</source>
+        <target>卫星</target>
+        <note>Satellite map view</note>
+      </trans-unit>
+      <trans-unit id="Standard">
+        <source>Standard</source>
+        <target>标准</target>
+        <note>Standard map view</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="WorldTrotter/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="5cP-bJ-K2y.title">
+        <source>Map</source>
+        <target>地图</target>
+        <note>Class = "UITabBarItem"; title = "Map"; ObjectID = "5cP-bJ-K2y";</note>
+      </trans-unit>
+      <trans-unit id="AKQ-3R-e5s.text">
+        <source>degrees Celsius</source>
+        <target>摄氏度</target>
+        <note>Class = "UILabel"; text = "degrees Celsius"; ObjectID = "AKQ-3R-e5s";</note>
+      </trans-unit>
+      <trans-unit id="Uet-WS-cGO.text">
+        <source>is really</source>
+        <target>是真的</target>
+        <note>Class = "UILabel"; text = "is really"; ObjectID = "Uet-WS-cGO";</note>
+      </trans-unit>
+      <trans-unit id="fiZ-ZO-43K.title">
+        <source>Web</source>
+        <target>卷筒纸</target>
+        <note>Class = "UITabBarItem"; title = "Web"; ObjectID = "fiZ-ZO-43K";</note>
+      </trans-unit>
+      <trans-unit id="mQG-1T-WyB.text">
+        <source>degrees Fahrenheit</source>
+        <target>华氏度</target>
+        <note>Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "mQG-1T-WyB";</note>
+      </trans-unit>
+      <trans-unit id="mTf-qS-7AJ.text">
+        <source>100</source>
+        <target>100</target>
+        <note>Class = "UILabel"; text = "100"; ObjectID = "mTf-qS-7AJ";</note>
+      </trans-unit>
+      <trans-unit id="rhI-tq-pdx.placeholder">
+        <source>value</source>
+        <target>值</target>
+        <note>Class = "UITextField"; placeholder = "value"; ObjectID = "rhI-tq-pdx";</note>
+      </trans-unit>
+      <trans-unit id="t87-Fs-evg.title">
+        <source>Convert</source>
+        <target>兑换</target>
+        <note>Class = "UITabBarItem"; title = "Convert"; ObjectID = "t87-Fs-evg";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="WorldTrotter/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription">
+        <source>I want to see where you 🐝 at.</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="WorldTrotterTests/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="WorldTrotterUITests/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="9.4.1" build-num="9F2000"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
