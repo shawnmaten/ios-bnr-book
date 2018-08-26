@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
+    @IBOutlet var nextQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabelCenterXConstraint: NSLayoutConstraint!
     @IBOutlet var answerLabel: UILabel!
     
     let questions: [String] = [
@@ -24,24 +27,69 @@ class ViewController: UIViewController {
     ]
     var currentQuestionIndex: Int = 0
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        nextQuestionLabel.alpha = 0
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = questions[currentQuestionIndex]
+        currentQuestionLabel.text = questions[currentQuestionIndex]
+        
+        nextQuestionLabelCenterXConstraint.isActive = false
+        
+        let questionLayoutGuide = UILayoutGuide()
+        view.addLayoutGuide(questionLayoutGuide)
+        questionLayoutGuide.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        nextQuestionLabel.centerXAnchor.constraint(equalTo: questionLayoutGuide.leadingAnchor).isActive = true
+        currentQuestionLabel.centerXAnchor.constraint(equalTo: questionLayoutGuide.trailingAnchor).isActive = true
     }
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
+        
         currentQuestionIndex += 1
         if currentQuestionIndex == questions.count {
             currentQuestionIndex = 0
         }
         
         let question: String = questions[currentQuestionIndex]
-        questionLabel.text = question
+        nextQuestionLabel.text = question
         answerLabel.text = "???"
+        
+        animateLabelTransitions()
     }
     
     @IBAction func showAnswer(_ sender: UIButton) {
         let answer: String = answers[currentQuestionIndex]
         answerLabel.text = answer
+    }
+    
+    func animateLabelTransitions() {
+        
+        view.layoutIfNeeded()
+        
+        let screenWidth = view.frame.width
+        self.currentQuestionLabelCenterXConstraint.constant += screenWidth
+        
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0,
+            usingSpringWithDamping: 0.75,
+            initialSpringVelocity: 0,
+            options: [.curveLinear],
+            animations: {
+                self.currentQuestionLabel.alpha = 0
+                self.nextQuestionLabel.alpha = 1
+                self.view.layoutIfNeeded()
+            },
+            completion: { _ in
+                self.currentQuestionLabel.text = self.nextQuestionLabel.text
+                self.currentQuestionLabelCenterXConstraint.constant = 0
+                self.currentQuestionLabel.alpha = 1
+                self.nextQuestionLabel.alpha = 0
+                self.view.layoutIfNeeded()
+            }
+        )
     }
 }

@@ -44,23 +44,34 @@
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dV-fB-T1w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbh-M3-u8n">
+                                <rect key="frame" x="175" y="88" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZWW-IA-CjZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="2gD-nl-Rij"/>
                             <constraint firstItem="JVi-h1-3FW" firstAttribute="centerX" secondItem="ZWW-IA-CjZ" secondAttribute="centerX" id="4fx-Ik-YLW"/>
-                            <constraint firstItem="5gu-Ic-Hv5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Pj-a0-2no"/>
                             <constraint firstItem="NZB-YR-Bnh" firstAttribute="top" secondItem="JVi-h1-3FW" secondAttribute="bottom" constant="8" id="6lr-ib-zAc"/>
                             <constraint firstItem="5gu-Ic-Hv5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="9I9-u4-CQz"/>
-                            <constraint firstItem="5gu-Ic-Hv5" firstAttribute="centerX" secondItem="ZWW-IA-CjZ" secondAttribute="centerX" id="9Td-ut-NNo"/>
+                            <constraint firstItem="Hbh-M3-u8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJU-Z5-96h"/>
                             <constraint firstItem="NZB-YR-Bnh" firstAttribute="centerX" secondItem="ZWW-IA-CjZ" secondAttribute="centerX" id="HBi-eX-CdJ"/>
+                            <constraint firstItem="5gu-Ic-Hv5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPw-zF-Aig"/>
                             <constraint firstItem="JVi-h1-3FW" firstAttribute="top" secondItem="5gu-Ic-Hv5" secondAttribute="bottom" constant="214" id="cuv-mG-G5J"/>
+                            <constraint firstItem="ZWW-IA-CjZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d8x-2v-gKA"/>
+                            <constraint firstItem="Hbh-M3-u8n" firstAttribute="top" secondItem="5gu-Ic-Hv5" secondAttribute="top" id="rkr-Yw-8SP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="JVi-h1-3FW" id="xzG-UD-N4n"/>
-                        <outlet property="questionLabel" destination="5gu-Ic-Hv5" id="Qry-m3-NBP"/>
+                        <outlet property="currentQuestionLabel" destination="5gu-Ic-Hv5" id="CU0-ON-DY6"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="YPw-zF-Aig" id="Wb5-BE-3xz"/>
+                        <outlet property="nextQuestionLabel" destination="Hbh-M3-u8n" id="hF4-9d-ysQ"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="EJU-Z5-96h" id="sgE-Ag-8oI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
