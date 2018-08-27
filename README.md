@@ -5,7 +5,7 @@ This repo contains my work as I read through "iOS Programming: The Big Nerd Ranc
 ## The Swift Programming Language
 I'm adding this section to track reading through the official "The Swift Programming Language" book. I completed "A Swift Tour" before starting BNR, and then BNR directed me to read some sections of the SPL, so I'd like to read the whole thing. I'll probably retain something useful.
 
-**Language Guide**
+### Language Guide
 | Section | Read? | Date |
 | ------- | ----- | ---- |
 | The Basics | ✅ | 2018-8-27 |
@@ -35,7 +35,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Access Control | ❌ | |
 | Advanced Operators | ❌ | |
 
-**Language Reference**
+### Language Reference
 | Section | Read? | Date |
 | ------- | ----- | ---- |
 | Lexical Structure | ❌ | |
