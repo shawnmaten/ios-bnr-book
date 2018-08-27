@@ -9,7 +9,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Section | Read? | Date |
 | ------- | ----- | ---- |
 | The Basics | ✅ | 2018-8-27 |
-| Basic Operators | ❌ | |
+| Basic Operators | ✅ | 2018-8-27 |
 | Strings and Characters | ✅ | 2018-8-27 |
 | Collection Types | ✅ | 2018-8-27 |
 | Control Flow | ❌ | |
