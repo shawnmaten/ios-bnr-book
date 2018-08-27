@@ -54,7 +54,7 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemStore.allItems.count
+        return itemStore.allItems.count + 1 // Lie for the "No more items!" row
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,13 +62,19 @@ class ItemsViewController: UITableViewController {
         // Get a new or recycled cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
-        // Set the text on the cell with the description of the item
-        // that is at the nth index of items, where n = row this cell
-        // will appear in on the tableview
-        let item = itemStore.allItems[indexPath.row]
-        
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        // Check if this is the "No more items!" row
+        if indexPath.row == itemStore.allItems.count {
+            cell.textLabel?.text = "No more items!"
+            cell.detailTextLabel?.text = nil
+        } else {
+            // Set the text on the cell with the description of the item
+            // that is at the nth index of items, where n = row this cell
+            // will appear in on the tableview
+            let item = itemStore.allItems[indexPath.row]
+            
+            cell.textLabel?.text = item.name
+            cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        }
         
         return cell
     }
@@ -103,8 +109,34 @@ class ItemsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
         // Update the model
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Remove"
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Don't allow deletion of "No more items!" row
+        return indexPath.row != itemStore.allItems.count ? true : false
+    }
+    
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Don't allow reorder of "No more items!" row
+        return indexPath.row != itemStore.allItems.count ? true : false
+    }
+    
+    override func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        
+        if proposedDestinationIndexPath.row == itemStore.allItems.count {
+            var modifiedDestination = proposedDestinationIndexPath
+            modifiedDestination.row -= 1
+            return modifiedDestination
+        }
+        
+        return proposedDestinationIndexPath
     }
     
 }
