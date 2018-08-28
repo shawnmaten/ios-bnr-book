@@ -12,7 +12,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Basic Operators | ✅ | 2018-8-27 |
 | Strings and Characters | ✅ | 2018-8-27 |
 | Collection Types | ✅ | 2018-8-27 |
-| Control Flow | ❌ | |
+| Control Flow | ✅ | 2018-8-28 |
 | Functions | ❌ | |
 | Closures | ❌ | |
 | Enumerations | ❌ | |
