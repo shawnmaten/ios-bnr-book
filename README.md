@@ -13,7 +13,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Strings and Characters | ✅ | 2018-8-27 |
 | Collection Types | ✅ | 2018-8-27 |
 | Control Flow | ✅ | 2018-8-28 |
-| Functions | ❌ | |
+| Functions | ✅ | 2018-8-29 |
 | Closures | ❌ | |
 | Enumerations | ❌ | |
 | Structures and Classes | ❌ | |
