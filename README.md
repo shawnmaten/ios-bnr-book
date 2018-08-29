@@ -14,7 +14,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Collection Types | ✅ | 2018-8-27 |
 | Control Flow | ✅ | 2018-8-28 |
 | Functions | ✅ | 2018-8-29 |
-| Closures | ❌ | |
+| Closures | ✅ | 2018-8-29 |
 | Enumerations | ❌ | |
 | Structures and Classes | ❌ | |
 | Properties | ❌ | |
