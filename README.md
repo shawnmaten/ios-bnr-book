@@ -15,7 +15,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Control Flow | ✅ | 2018-8-28 |
 | Functions | ✅ | 2018-8-29 |
 | Closures | ✅ | 2018-8-29 |
-| Enumerations | ❌ | |
+| Enumerations | ✅ | 2018-9-3 |
 | Structures and Classes | ❌ | |
 | Properties | ❌ | |
 | Methods | ❌ | |
