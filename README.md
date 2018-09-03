@@ -16,7 +16,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Functions | ✅ | 2018-8-29 |
 | Closures | ✅ | 2018-8-29 |
 | Enumerations | ✅ | 2018-9-3 |
-| Structures and Classes | ❌ | |
+| Structures and Classes | ✅ | 2018-9-3 |
 | Properties | ❌ | |
 | Methods | ❌ | |
 | Subscripts | ❌ | |
