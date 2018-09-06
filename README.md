@@ -20,7 +20,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Properties | ✅ | 2018-9-5 |
 | Methods | ✅ | 2018-9-5 |
 | Subscripts | ✅ | 2018-9-6 |
-| Inheritance | ❌ | |
+| Inheritance | ✅ | 2018-9-6 |
 | Initialization | ❌ | |
 | Deinitialization | ❌ | |
 | Optional Chaining | ❌ | |
