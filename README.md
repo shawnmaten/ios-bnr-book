@@ -18,7 +18,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Enumerations | ✅ | 2018-9-3 |
 | Structures and Classes | ✅ | 2018-9-3 |
 | Properties | ✅ | 2018-9-5 |
-| Methods | ❌ | |
+| Methods | ✅ | 2018-9-5 |
 | Subscripts | ❌ | |
 | Inheritance | ❌ | |
 | Initialization | ❌ | |
