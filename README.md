@@ -19,7 +19,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Structures and Classes | ✅ | 2018-9-3 |
 | Properties | ✅ | 2018-9-5 |
 | Methods | ✅ | 2018-9-5 |
-| Subscripts | ❌ | |
+| Subscripts | ✅ | 2018-9-6 |
 | Inheritance | ❌ | |
 | Initialization | ❌ | |
 | Deinitialization | ❌ | |
