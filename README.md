@@ -21,8 +21,8 @@ I'm adding this section to track reading through the official "The Swift Program
 | Methods | ✅ | 2018-9-5 |
 | Subscripts | ✅ | 2018-9-6 |
 | Inheritance | ✅ | 2018-9-6 |
-| Initialization | ❌ | |
-| Deinitialization | ❌ | |
+| Initialization | ✅ | 2018-10-16 |
+| Deinitialization | ✅ | 2018-10-16 |
 | Optional Chaining | ❌ | |
 | Error Handling | ❌ | |
 | Type Casting | ❌ | |
