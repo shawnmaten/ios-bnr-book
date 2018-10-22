@@ -24,7 +24,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Initialization | ✅ | 2018-10-16 |
 | Deinitialization | ✅ | 2018-10-16 |
 | Optional Chaining | ✅ | 2018-10-22 |
-| Error Handling | ❌ | |
+| Error Handling | ✅ | 2018-10-22 |
 | Type Casting | ❌ | |
 | Nested Types | ❌ | |
 | Extensions | ❌ | |
