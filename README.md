@@ -23,7 +23,7 @@ I'm adding this section to track reading through the official "The Swift Program
 | Inheritance | ✅ | 2018-9-6 |
 | Initialization | ✅ | 2018-10-16 |
 | Deinitialization | ✅ | 2018-10-16 |
-| Optional Chaining | ❌ | |
+| Optional Chaining | ✅ | 2018-10-22 |
 | Error Handling | ❌ | |
 | Type Casting | ❌ | |
 | Nested Types | ❌ | |
